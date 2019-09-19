@@ -1,0 +1,745 @@
+/* ### global ### */
+/* getting rid of Chrome's focus feedback*/
+*:focus{
+	outline: none;
+}
+
+*, *:focus{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);	
+}
+
+table{
+	border-spacing: 0px;
+}
+
+
+.toolbar *:focus{	
+	outline: 1px solid lightgray;
+}
+
+
+.gwt-PopupPanel{
+	border: 1px solid #999;
+	-moz-box-shadow:    2px 2px 1px 1px #ccc;
+	-webkit-box-shadow: 2px 2px 1px 1px #ccc;
+	box-shadow:         2px 2px 1px 1px #ccc;
+	padding: 0px;
+}
+
+
+
+.gwt-DialogBox .Caption, 
+.Caption{
+	width:100%;
+	border: 0px;
+	
+}
+
+.Caption td{
+	vertical-align: middle;
+	color: #707070;
+    font-weight: bold;
+	font-size: 14px;
+}
+
+.CloseButton{
+	float:right;
+	font-size: 20px;
+	color: gray;
+	cursor: pointer;
+}
+
+.gwt-DialogBox{
+	border-radius: 4px;	
+	-webkit-box-shadow: 2px 2px 5px #888888;
+	-moz-box-shadow: 2px 2px 5px #888888;
+	box-shadow: 2px 2px 5px #888888;
+	border: none;
+}
+
+.gwt-DialogBox .dialogMiddleLeft,
+.gwt-DialogBox .dialogMiddleRight,
+.gwt-DialogBox .dialogBottomLeft,
+.gwt-DialogBox .dialogBottomCenter,
+.gwt-DialogBox .dialogBottomRight{
+	background-image: none;
+	background-color: white;
+}
+
+
+.gwt-DialogBox .dialogTopRight, 
+.gwt-DialogBox .dialogTopLeft{
+	background-image: none;
+	background-color: #f1f1f1;
+} 
+
+.gwt-DialogBox .dialogTopRightInner, 
+.gwt-DialogBox .dialogBottomRightInner  {
+	width: 10px;
+}
+
+.redButton, 
+.greenButton, 
+.blueButton, 
+.grayButton{
+	color: white;
+	background-image: none;
+	font-weight: normal;
+	text-align: center;
+	min-width: 80px;
+	margin-top: 10px;
+	border-radius: 1px;
+	border: 1px solid #3498db;
+	background-color: #3498db;
+}
+.greenButton{}
+
+.redButton{}
+
+.blueButton{}
+
+.grayButton{
+	border: 1px solid lightgray;
+	background-color: gainsboro;	
+}
+
+.gwt-CheckBox label{vertical-align: top;}
+.gwt-CheckBox input{margin:3px 5px 0px 0px;}
+
+.marginTop, 
+.separated{
+	margin-top: 15px;
+}
+.marginRight{
+	margin-right: 10px;
+}
+
+.marginSmallTop {
+	margin-top: 4px; 
+}
+
+.expandCheckbox{
+	margin-left: 10px;
+}
+
+.errorMessage {
+	font-weight: bold;	
+	color: red;
+}
+
+.dialogSubHeader{
+	color: gray;
+	font-weight: bold;	
+	font-size: 14px;
+	margin-top: 15px; 
+	margin-bottom: 5px;
+}
+
+.gwt-SuggestBoxPopup{
+	background-color: white;
+	border-radius: 4px;
+}
+
+.hasBottomLine{
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+	border-bottom: 1px solid gray;
+}
+
+.separated{
+	padding-bottom: 15px;
+	border-bottom: 1px solid gray;
+}
+
+.gwt-TabBar {
+    background: none repeat scroll 0% 0% white;
+    border-top: 2px solid white;
+}
+.gwt-TabBar .gwt-TabBarItem-selected{
+	background: none repeat scroll 0% 0% #e4e4e4;
+}
+
+.gwt-TabPanelBottom {
+	background-color: #e4e4e4;
+	border: none;
+}
+
+.markushViewWrapper{
+	max-width: 50%;
+	max-height: 70%; 
+}
+
+.gwt-Tree .gwt-TreeNode {
+    border-left: 1px solid #005284;
+}
+
+.propertyDialog .gwt-CheckBox{
+	margin-left: 10px;
+}
+
+.disableiOSMenu{
+	-webkit-touch-callout: none;
+}
+
+/* for DefaultListPanel */
+div.listPanel {
+	vertical-align: top;
+	display: inline-block;
+	-moz-padding-start: 0px;
+	-webkit-padding-start: 0px;
+	padding-start: 0px;
+}
+div.listPanel-label {
+	word-wrap: break-word;
+	padding-right: 0.5em;
+}
+div.listPanel-item, div.listPanel-item > * {
+	vertical-align: top;
+}
+
+div.listPanel-item {
+	display: table-row;
+	border: none;
+}
+
+div.listPanel-item.marginTop {
+	border-top: solid 5px transparent;
+}
+
+div.listPanel-item.inline.marginTop {
+	border: none;
+}
+
+div.listPanel-item > div.listPanel-label, 
+div.listPanel-item > select, 
+div.listPanel-item > input {
+	display: table-cell;
+}
+
+div.listPanel-item.inline {
+	display: inline-block;
+	/*margin-right: 2em;*/
+}
+
+div.listPanel-item.inline > div.listPanel-label, 
+div.listPanel-item.inline > select, 
+div.listPanel-item.inline > input {
+	display: initial;
+}
+
+table.dashBorder {
+	border: 1px dashed gray;
+}
+/* ### canvas ### */
+canvas, 
+canvas:FOCUS{
+	outline: none;
+	margin: 0px;
+	padding: 0px;
+	-webkit-user-select: none;
+}
+/* ### toolbar ### */
+.touchToolbar .gwt-ToggleButton,
+.touchToolbar .gwt-PushButton-up,
+.touchToolbar .gwt-PushButton-down,
+.touchToolbar .gwt-PushButton-up-hovering,
+.touchToolbar .gwt-PushButton-down-hovering,
+.touchToolbar .gwt-PushButton-up-disabled,
+.touchToolbar .gwt-PushButton-down-disabled,
+.touchComboButtonPopup .gwt-ToggleButton,
+.touchComboButtonPopup .gwt-PushButton,
+.toolbar .gwt-ToggleButton,
+.toolbar .gwt-PushButton-up,
+.toolbar .gwt-PushButton-down,
+.toolbar .gwt-PushButton-up-hovering,
+.toolbar .gwt-PushButton-down-hovering,
+.toolbar .gwt-PushButton-up-disabled,
+.toolbar .gwt-PushButton-down-disabled,
+.comboButtonPopup .gwt-ToggleButton,
+.comboButtonPopup .gwt-PushButton {
+	border-radius: 0px;
+	width: 24px;
+	height: 28px;
+	line-height: 26px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.touchToolbar .gwt-ToggleButton,
+.touchToolbar .gwt-PushButton-up,
+.touchToolbar .gwt-PushButton-down,
+.touchToolbar .gwt-PushButton-up-hovering,
+.touchToolbar .gwt-PushButton-down-hovering,
+.touchToolbar .gwt-PushButton-up-disabled,
+.touchToolbar .gwt-PushButton-down-disabled,
+.touchComboButtonPopup .gwt-ToggleButton,
+.touchComboButtonPopup .gwt-PushButton{
+	width: 39px;
+	height: 43px;
+	line-height: 41px;	
+}
+
+.touchToolbar .hTouchToolbarNavigator .gwt-PushButton-up,
+.touchToolbar .hTouchToolbarNavigator .gwt-PushButton-down,
+.touchToolbar .hTouchToolbarNavigator .gwt-PushButton-up-hovering,
+.touchToolbar .hTouchToolbarNavigator .gwt-PushButton-down-hovering,
+.touchToolbar .hTouchToolbarNavigator .gwt-PushButton-up-disabled,
+.touchToolbar .hTouchToolbarNavigator .gwt-PushButton-down-disabled{
+	width: 16px;
+}
+
+.toolbar .hToolbarNavigator .gwt-PushButton-up,
+.toolbar .hToolbarNavigator .gwt-PushButton-down,
+.toolbar .hToolbarNavigator .gwt-PushButton-up-hovering,
+.toolbar .hToolbarNavigator .gwt-PushButton-down-hovering,
+.toolbar .hToolbarNavigator .gwt-PushButton-up-disabled,
+.toolbar .hToolbarNavigator .gwt-PushButton-down-disabled{
+	width: 9px;
+}
+
+.touchToolbar .vTouchToolbarNavigator .gwt-PushButton-up,
+.touchToolbar .vTouchToolbarNavigator .gwt-PushButton-down,
+.touchToolbar .vTouchToolbarNavigator .gwt-PushButton-up-hovering,
+.touchToolbar .vTouchToolbarNavigator .gwt-PushButton-down-hovering,
+.touchToolbar .vTouchToolbarNavigator .gwt-PushButton-up-disabled,
+.touchToolbar .vTouchToolbarNavigator .gwt-PushButton-down-disabled{
+	height: 20px;
+	line-height: 18px;	
+}
+
+.toolbar .vToolbarNavigator .gwt-PushButton-up,
+.toolbar .vToolbarNavigator .gwt-PushButton-down,
+.toolbar .vToolbarNavigator .gwt-PushButton-up-hovering,
+.toolbar .vToolbarNavigator .gwt-PushButton-down-hovering,
+.toolbar .vToolbarNavigator .gwt-PushButton-up-disabled,
+.toolbar .vToolbarNavigator .gwt-PushButton-down-disabled{
+	height: 13px;
+	line-height: 11px;	
+}
+
+
+.touchToolbar .gwt-ToggleButton img,
+.touchToolbar .gwt-PushButton-up img,
+.touchToolbar .gwt-PushButton-down img,
+.touchToolbar .gwt-PushButton-up-hovering img,
+.touchToolbar .gwt-PushButton-down-hovering img,
+.touchToolbar .gwt-PushButton-up-disabled img,
+.touchToolbar .gwt-PushButton-down-disabled img,
+.touchComboButtonPopup .gwt-ToggleButton img,
+.touchComboButtonPopup .gwt-PushButton img,
+.toolbar .gwt-ToggleButton img,
+.toolbar .gwt-PushButton-up img,
+.toolbar .gwt-PushButton-down img,
+.toolbar .gwt-PushButton-up-hovering img,
+.toolbar .gwt-PushButton-down-hovering img,
+.toolbar .gwt-PushButton-up-disabled img,
+.toolbar .gwt-PushButton-down-disabled img,
+.comboButtonPopup .gwt-ToggleButton img,
+.comboButtonPopup .gwt-PushButton img{
+	vertical-align: middle;
+	margin-top: 1px;
+}
+
+.touchToolbar .gwt-ToggleButton-up-disabled,
+.touchToolbar .gwt-ToggleButton-down-disabled,
+.touchToolbar .gwt-PushButton-up-disabled,
+.touchToolbar .gwt-PushButton-down-disabled,
+.touchToolbar .gwt-ToggleButton-up,
+.touchToolbar .gwt-PushButton-up,
+.touchComboButtonPopup .gwt-ToggleButton-up-disabled,
+.touchComboButtonPopup .gwt-ToggleButton-down-disabled,
+.touchComboButtonPopup .gwt-ToggleButton-up,
+.touchComboButtonPopup .gwt-PushButton-up-disabled,
+.touchComboButtonPopup .gwt-PushButton-down-disabled,
+.touchComboButtonPopup .gwt-PushButton-up,
+.toolbar .gwt-ToggleButton-up-disabled,
+.toolbar .gwt-ToggleButton-down-disabled,
+.toolbar .gwt-PushButton-up-disabled,
+.toolbar .gwt-PushButton-down-disabled,
+.toolbar .gwt-ToggleButton-up,
+.toolbar .gwt-PushButton-up,
+.comboButtonPopup .gwt-ToggleButton-up-disabled,
+.comboButtonPopup .gwt-ToggleButton-down-disabled,
+.comboButtonPopup .gwt-ToggleButton-up,
+.comboButtonPopup .gwt-PushButton-up-disabled,
+.comboButtonPopup .gwt-PushButton-down-disabled,
+.comboButtonPopup .gwt-PushButton-up {
+	border: 1px solid white;
+	
+}
+.touchComboButtonPopup .gwt-ToggleButton,
+.comboButtonPopup .gwt-ToggleButton{
+	outline: none;
+}
+
+.touchToolbar .gwt-ToggleButton img,
+.touchToolbar .gwt-ToggleButton-up img,
+.touchToolbar .gwt-ToggleButton-down img,
+.touchToolbar .gwt-PushButton-up img,
+.touchToolbar .gwt-PushButton-down img,
+.touchComboButtonPopup .gwt-ToggleButton img,
+.touchComboButtonPopup .gwt-ToggleButton-up img,
+.touchComboButtonPopup .gwt-ToggleButton-down img,
+.touchComboButtonPopup .gwt-PushButton img,
+.touchComboButtonPopup .gwt-PushButton-up img,
+.touchComboButtonPopup .gwt-PushButton-down img, 
+.toolbar .gwt-ToggleButton img,
+.toolbar .gwt-ToggleButton-up img,
+.toolbar .gwt-ToggleButton-down img,
+.toolbar .gwt-PushButton-up img,
+.toolbar .gwt-PushButton-down img,
+.comboButtonPopup .gwt-ToggleButton img,
+.comboButtonPopup .gwt-ToggleButton-up img,
+.comboButtonPopup .gwt-ToggleButton-down img,
+.comboButtonPopup .gwt-PushButton img,
+.comboButtonPopup .gwt-PushButton-up img,
+.comboButtonPopup .gwt-PushButton-down img {
+	opacity:1.0;
+	/*filter:alpha(opacity:100);*/ /* For IE8 and earlier */
+}
+
+.touchToolbar .gwt-ToggleButton-up-disabled img,
+.touchToolbar .gwt-ToggleButton-down-disabled img,
+.touchToolbar .gwt-PushButton-up-disabled img,
+.touchToolbar .gwt-PushButton-down-disabled img,
+.touchComboButtonPopup .gwt-ToggleButton-up-disabled img,
+.touchComboButtonPopup .gwt-ToggleButton-down-disabled img,
+.touchComboButtonPopup .gwt-PushButton-up-disabled img,
+.touchComboButtonPopup .gwt-PushButton-down-disabled img,
+.toolbar .gwt-ToggleButton-up-disabled img,
+.toolbar .gwt-ToggleButton-down-disabled img,
+.toolbar .gwt-PushButton-up-disabled img,
+.toolbar .gwt-PushButton-down-disabled img,
+.comboButtonPopup .gwt-ToggleButton-up-disabled img,
+.comboButtonPopup .gwt-ToggleButton-down-disabled img,
+.comboButtonPopup .gwt-PushButton-up-disabled img,
+.comboButtonPopup .gwt-PushButton-down-disabled img{
+	opacity:0.4;
+	/*filter:alpha(opacity:40);*/ /* For IE8 and earlier */
+}
+
+.touchToolbar .gwt-ToggleButton-up-hovering,
+.touchToolbar .gwt-PushButton-up-hovering,
+.touchToolbar .gwt-ToggleButton-up:hover,
+.touchToolbar .gwt-PushButton-up:hover,
+.touchComboButtonPopup .gwt-ToggleButton-up-hovering,
+.touchComboButtonPopup .gwt-ToggleButton-up:hover,
+.touchComboButtonPopup .gwt-PushButton-up-hovering,
+.touchComboButtonPopup .gwt-PushButton-up:hover,
+.toolbar .gwt-ToggleButton-up-hovering,
+.toolbar .gwt-PushButton-up-hovering,
+.toolbar .gwt-ToggleButton-up:hover,
+.toolbar .gwt-PushButton-up:hover,
+.comboButtonPopup .gwt-ToggleButton-up-hovering,
+.comboButtonPopup .gwt-ToggleButton-up:hover,
+.comboButtonPopup .gwt-PushButton-up-hovering,
+.comboButtonPopup .gwt-PushButton-up:hover{
+	border: 1px solid white;
+}
+
+.touchToolbar .gwt-ToggleButton-down,
+.touchToolbar .gwt-PushButton-down,
+.touchComboButtonPopup .gwt-ToggleButton-down,
+.touchComboButtonPopup .gwt-PushButton-down,
+.toolbar .gwt-ToggleButton-down,
+.toolbar .gwt-PushButton-down,
+.comboButtonPopup .gwt-ToggleButton-down,
+.comboButtonPopup .gwt-PushButton-down {
+	outline: none;
+}
+
+.touchToolbar .gwt-ToggleButton,
+.touchToolbar .gwt-ToggleButton-up,
+.touchToolbar .gwt-ToggleButton-down,
+.touchToolbar .gwt-ToggleButton-up-hovering,
+.touchToolbar .gwt-ToggleButton-down-hovering,
+.touchToolbar .gwt-ToggleButton-up-disabled,
+.touchToolbar .gwt-ToggleButton-down-disabled,
+.touchToolbar .gwt-PushButton-up,
+.touchToolbar .gwt-PushButton-down,
+.touchToolbar .gwt-PushButton-up-hovering,
+.touchToolbar .gwt-PushButton-down-hovering,
+.touchToolbar .gwt-PushButton-up-disabled,
+.touchToolbar .gwt-PushButton-down-disabled,
+.touchComboButtonPopup .gwt-ToggleButton,
+.touchComboButtonPopup .gwt-ToggleButton-up,
+.touchComboButtonPopup .gwt-ToggleButton-down,
+.touchComboButtonPopup .gwt-ToggleButton-up-hovering,
+.touchComboButtonPopup .gwt-ToggleButton-down-hovering,
+.touchComboButtonPopup .gwt-ToggleButton-up-disabled,
+.touchComboButtonPopup .gwt-ToggleButton-down-disabled,
+.touchComboButtonPopup .gwt-PushButton,
+.touchComboButtonPopup .gwt-PushButton-up,
+.touchComboButtonPopup .gwt-PushButton-down,
+.touchComboButtonPopup .gwt-PushButton-up-hovering,
+.touchComboButtonPopup .gwt-PushButton-down-hovering,
+.touchComboButtonPopup .gwt-PushButton-up-disabled,
+.touchComboButtonPopup .gwt-PushButton-down-disabled,
+.toolbar .gwt-ToggleButton,
+.toolbar .gwt-ToggleButton-up,
+.toolbar .gwt-ToggleButton-down,
+.toolbar .gwt-ToggleButton-up-hovering,
+.toolbar .gwt-ToggleButton-down-hovering,
+.toolbar .gwt-ToggleButton-up-disabled,
+.toolbar .gwt-ToggleButton-down-disabled,
+.toolbar .gwt-PushButton-up,
+.toolbar .gwt-PushButton-down,
+.toolbar .gwt-PushButton-up-hovering,
+.toolbar .gwt-PushButton-down-hovering,
+.toolbar .gwt-PushButton-up-disabled,
+.toolbar .gwt-PushButton-down-disabled,
+.comboButtonPopup .gwt-PushButton,
+.comboButtonPopup .gwt-PushButton-up,
+.comboButtonPopup .gwt-PushButton-down,
+.comboButtonPopup .gwt-PushButton-up-hovering,
+.comboButtonPopup .gwt-PushButton-down-hovering,
+.comboButtonPopup .gwt-PushButton-up-disabled,
+.comboButtonPopup .gwt-PushButton-down-disabled,
+.comboButtonPopup .gwt-ToggleButton,
+.comboButtonPopup .gwt-ToggleButton-up,
+.comboButtonPopup .gwt-ToggleButton-down,
+.comboButtonPopup .gwt-ToggleButton-up-hovering,
+.comboButtonPopup .gwt-ToggleButton-down-hovering,
+.comboButtonPopup .gwt-ToggleButton-up-disabled,
+.comboButtonPopup .gwt-ToggleButton-down-disabled{
+	background-image: none;
+	border: 1px solid white;
+	
+}
+.touchToolbar .comboButton,
+.toolbar .comboButton,
+.touchToolbar .comboButton-down,
+.toolbar .comboButton-down{
+	border-radius: 0px;
+	border-bottom-right-radius: 9px;
+	background-color: white;
+}
+
+.touchToolbar .comboButton,
+.toolbar .comboButton{
+	background-color: white;
+}
+
+
+.touchToolbar .comboButton{
+	border-bottom-right-radius: 12px;
+}
+
+.touchToolbar .comboButtonBackground,
+.toolbar .comboButtonBackground{
+	background: black;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iNzklIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 84%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(84%,rgba(0,0,0,0)), color-stop(85%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 84%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 84%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 84%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 84%,rgba(0,0,0,1) 85%,rgba(0,0,0,1) 100%);
+	filter: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.touchToolbar .gwt-PushButton-down,
+.touchToolbar .gwt-PushButton-down-hovering,
+.touchToolbar .gwt-PushButton-down-disabled,
+.toolbar .gwt-PushButton-down,
+.toolbar .gwt-PushButton-down-hovering,
+.toolbar .gwt-PushButton-down-disabled,
+.touchToolbar .gwt-ToggleButton-down,
+.touchToolbar .gwt-ToggleButton-down-hovering,
+.touchToolbar .gwt-ToggleButton-down-disabled,
+.toolbar .gwt-ToggleButton-down,
+.toolbar .gwt-ToggleButton-down-hovering,
+.toolbar .gwt-ToggleButton-down-disabled,
+.comboButtonPopup .gwt-ToggleButton-down,
+.comboButtonPopup .gwt-ToggleButton-down-hovering,
+.comboButtonPopup .gwt-ToggleButton-down-disabled,
+.comboButtonPopup .gwt-PushButton-down,
+.comboButtonPopup .gwt-PushButton-down-hovering,
+.comboButtonPopup .gwt-PushButton-down-disabled,
+.touchToolbar .comboButton-down,
+.toolbar .comboButton-down{
+	border: 1px solid #B6CDEF;
+	background-color: #B6CDEF;
+}
+
+
+.slidingBar{
+	transition: margin 0.25s;
+	-webkit-transition: margin 0.25s;
+}
+
+.contextMenu .gwt-MenuItem
+{
+	padding-right: 3px;
+	white-space: nowrap;
+}
+
+.touchContextMenu .gwt-MenuItem
+{
+	font-size: 20px;
+	padding-right: 3px;
+	white-space: nowrap;
+}
+
+.touchContextMenu{
+	max-height: 80%;
+	max-width: 80%;
+	overflow-y: scroll;
+}
+
+.toolbar, .touchToolbar, 
+.toolbar div, 
+.touchToolbar div,
+.toolbar table, 
+.touchToolbar table, 
+.toolbar td, 
+.touchToolbar td {
+	-webkit-user-select: none;
+}
+
+.gwt-PopupPanel {
+	border: none;
+}
+
+/* ### propertyDialog ### */
+
+.propertyDialog .gwt-ToggleButton,
+.propertyDialog .gwt-ToggleButton-up,
+.propertyDialog .gwt-ToggleButton-down,
+.propertyDialog .gwt-ToggleButton-up-hovering,
+.propertyDialog .gwt-ToggleButton-down-hovering,
+.propertyDialog .gwt-ToggleButton-up-disabled,
+.propertyDialog .gwt-ToggleButton-down-disabled{
+background-color: transparent;
+background-image: none;
+padding: 0px 2px;
+margin: 0px 3px;
+border:0px;
+}
+
+/* ### periodicsystem ### */
+.periodicsystem .gwt-ToggleButton,
+.periodicsystem .gwt-ToggleButton-up,
+.periodicsystem .gwt-ToggleButton-down,
+.periodicsystem .gwt-ToggleButton-up-hovering,
+.periodicsystem .gwt-ToggleButton-down-hovering,
+.periodicsystem .gwt-ToggleButton-up-disabled,
+.periodicsystem .gwt-ToggleButton-down-disabled {
+	border-radius:0px;
+	border: 0px;
+	font-size: 11px;
+	width: 20px;
+	height: 24px;
+	padding-right: 3px;
+	line-height: 22px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 0px;
+}
+
+.emptyRow .gwt-Label{
+	font-size: 4px;	
+	line-height: 8px;
+	visibility: hidden;
+}
+
+.emptyRow{
+	font-size: 4px;
+	border: 1px solid #bbb;
+	border-left: 0px;
+	border-right:0px;	
+}
+.periodicButton{
+	border: 1px solid #bbb;
+}
+
+.periodicsystem{
+	border-collapse: collapse;
+}
+
+.periodicsystem .gwt-ToggleButton,
+.periodicsystem .gwt-ToggleButton-up{
+    background: none;
+}
+
+.periodicsystem .gwt-ToggleButton-up-disabled,
+.periodicsystem .gwt-ToggleButton-down-disabled{
+    background: lightgray;
+    color: gray;
+    text-decoration: italic;
+}
+
+.periodicsystem .gwt-ToggleButton-down,
+.periodicsystem .gwt-ToggleButton-down-hovering{
+    background: #ddd;
+}
+
+.periodicsystem .gwt-Label { 
+	padding: 0px 5px;
+}
+
+.periodicsystem td, 
+.periodicsystem div{
+	text-align: center;
+	vertical-align: middle;
+	padding: auto;
+}
+
+.periodicsystem .listButton .gwt-ToggleButton,
+.periodicsystem .listButton .gwt-ToggleButton-up,
+.periodicsystem .listButton .gwt-ToggleButton-down,
+.periodicsystem .listButton .gwt-ToggleButton-up-hovering,
+.periodicsystem .listButton .gwt-ToggleButton-down-hovering,
+.periodicsystem .listButton .gwt-ToggleButton-up-disabled,
+.periodicsystem .listButton .gwt-ToggleButton-down-disabled{
+	width: 62px;
+	height: 22px;
+}
+
+.periodicsystem .listButton .gwt-ToggleButton,
+.periodicsystem .listButton .gwt-ToggleButton-up{
+    background-color: #8B9699;
+    color: white;
+    font-weight: normal;
+}
+.periodicsystem .listButton .gwt-ToggleButton-down,
+.periodicsystem .listButton .gwt-ToggleButton-down-hovering{
+    background-color: #7DC9BE;
+    font-weight: normal;
+}
+
+.topGap{
+	border-top: 20px solid rgba(0,0,0,0);
+}
+
+
+.listButton{ /* remove this style definition, to make list/not list buttons visible*/ 
+	visibility: visible;
+}
+
+/* ### error ### */
+.errorpanel {
+	background: none;
+}
+.errorpanel .details {
+	background: none;
+	border-left: none;
+}
+
+.errorpanel .details .gwt-Label {
+	font-weight: bold;
+	padding-left: 2px;
+}
+
+.errorpanel .details .gwt-TextArea-readonly {
+	color: black;
+	border-style: none;
+	background: #E7E7E7;
+}

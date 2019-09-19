@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--PLEASE DO NOT MODIFY THIS FILE AND BE AWARE THAT THE FILE CONTAINS CONFIDENTIAL INFORMATION.-->
+<ChemAxon>
+<License>
+<Field Name="Software" Value="Marvin for JavaScript"/>
+<Field Name="License Term" Value="Perpetual"/>
+<Field Name="Licensee" Value="Korea Chemical Bank  KRICT (Korea Research Institute of Chemical Technology)"/>
+<Field Name="Number of Users" Value="5"/>
+<Field Name="Expiration Date" Value="Never"/>
+<Field Name="Support Expiration Date" Value="2016-11-13"/>
+<Field Name="Comment" Value="null"/>
+<Restriction Name="Server Use" Value="Not Allowed"/>
+<Signature Value="MCwCFGLDaql/HYKp08jfdye5lbUQHPqTAhRq668il98jHXq04vSKhWF3k1epSw=="/>
+</License>
+</ChemAxon>
