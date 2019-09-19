@@ -1,0 +1,43 @@
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+
+}
+
+#header {
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    background-color: #222222;
+}
+
+#menu {
+    color: #FFFFFF;
+}
+
+
+#container {
+    width: 800px;
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+
+#contents {
+
+}
+
+#button_con {
+    background-color: #222222;
+    color: #FFFFFF;
+    display: inline;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100;
+    font-size: 12px;
+}
